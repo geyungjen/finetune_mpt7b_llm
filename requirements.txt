@@ -1,0 +1,26 @@
+# Core ML stack
+torch==2.4.0+cu121       # match your CUDA 12.1 runtime
+torchvision==0.19.0+cu121
+torchaudio==2.4.0+cu121
+
+# Hugging Face ecosystem
+transformers==4.42.4     # stable with MPT
+datasets==2.20.0
+accelerate==0.31.0
+peft==0.12.0
+safetensors==0.4.3
+tokenizers==0.19.1
+
+# Trainer + utilities
+evaluate==0.4.2
+scikit-learn==1.5.0
+numpy==1.26.4
+pandas==2.2.2
+
+# Optional: avoids bnb errors (you’re using adamw_torch)
+# bitsandbytes==0.43.1   # only if you want 8-bit optimizers
+
+# Misc
+tqdm==4.66.4
+huggingface-hub==0.23.4
+
